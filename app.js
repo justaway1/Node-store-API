@@ -4,6 +4,7 @@ require('express-async-errors')
 //Imports
 const express = require('express')
 const app = express()
+
 const connectDB = require('./db/connect')
 const productsRoute = require('./routes/products')
 
