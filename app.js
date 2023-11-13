@@ -1,4 +1,5 @@
 require('dotenv').config()
+require('express-async-errors')
 
 //Imports
 const express = require('express')
@@ -17,12 +18,13 @@ app.use(express.json())
 app.get('/', (req, res) => {
   res.send(`<h1>Store API</h1><a href='/api/v1/products'>Products list</a>`)
 })
-//Main Route
+
 app.use('/api/v1/products', productsRoute)
 
 app.use(notFoundMiddleware)
 app.use(errorHandler)
 
+//PORT
 const port = process.env.PORT || 3000
 
 const start = async () => {
