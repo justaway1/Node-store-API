@@ -19,19 +19,19 @@ This API endpoint allows retrieval of product information with specified query p
 
 ## Usage Examples
 ### Retrieve Products Sorted by Price in Descending Order
-`GET /api/v1/products?sort=-price`
+**`GET /api/v1/products?sort=-price`**
 
 ### Retrieve Specific Fields for Products
-GET /api/v1/products?fields=name,company
+**`GET /api/v1/products?fields=name,company`**
 
 ### Numeric Filtering for Prices Greater Than 30 or 100.
-GET /api/v1/products?numericFilters=price>100
+**`GET /api/v1/products?numericFilters=price>100`**
 
 ### Filtering Products by Company
-GET /api/v1/products?name="product_name"
+**`GET /api/v1/products?name="product_name"`**
 
 ### Pagination with Limit and Page Number
-GET /api/v1/products?page=2&limit=10
+**`GET /api/v1/products?page=2&limit=10`**
 
 
 ## Response Format
