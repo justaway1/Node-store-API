@@ -6,6 +6,26 @@ This API endpoint allows retrieval of product information with specified query p
 ### Endpoint Path
 `/api/v1/products`
 
+## Running Locally
+To run this project locally, follow these steps:
+
+1. **Clone the Repository:**
+
+git clone https://github.com/justaway1/Node-store-API.git
+
+2. **Install Dependencies:**
+
+cd your-project
+npm install
+
+3. **Start the Server:**
+
+npm start
+
+4. **Access the API:**
+Once the server is running, access the API at `http://localhost:3000/api/v1/products`
+
+
 ## Query Parameters
 - **`?sort`**: Sorts the data in ascending (`asc`) or descending (`dsc`) order based on chosen criteria. Use `'-'` for descending order (e.g., `?sort=-price` for descending price sorting).
 - **`?fields`**: Retrieves specific fields or data attributes. Use this parameter to specify the desired fields (e.g., `?fields=name,company` for retrieving only 'name' and 'company').
