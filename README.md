@@ -19,7 +19,7 @@ This API endpoint allows retrieval of product information with specified query p
 
 ## Usage Examples
 ### Retrieve Products Sorted by Price in Descending Order
-GET /api/v1/products?sort=-price
+`GET /api/v1/products?sort=-price`
 
 ### Retrieve Specific Fields for Products
 GET /api/v1/products?fields=name,company
