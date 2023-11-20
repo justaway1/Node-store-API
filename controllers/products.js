@@ -37,6 +37,7 @@ const getAllProducts = async (req, res) => {
       regEx,
       match => `-${operatorMap[match]}-`
     )
+    console.log(filters)
 
     const options = ['price', 'rating']
     filters = filters.split(',').forEach(item => {
